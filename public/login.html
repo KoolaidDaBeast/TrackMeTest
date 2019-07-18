@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="A frontend dashboard for the TrackMe application" />
+    <meta name="author" content="Kolade" />
+    <meta name="viewport" content="width=device-width, initialscale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+    <title>TrackMe</title>
+</head>
+
+<body>
+    <div id="navbar"></div>
+
+    <div class="container" style="width: 70%;">
+        <h1>Login</h1>
+
+        <div class="alert alert-danger" role="alert" id="message" style="display: none;">
+            <strong id="message-text"></strong>
+        </div>
+
+        <div class="form-group">
+            <label for="user">Username</label>
+            <input type="text" class="form-control" id="username" />
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" />
+        </div>
+
+        <button class="btn btn-success" id="login">Login</button>
+        <p>Dont' have an account? Create one <a href="/register">here</a></p>
+    </div>
+
+    <div id="footer"></div>
+
+    <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
